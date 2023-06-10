@@ -31,20 +31,20 @@ const Books = () => {
 
     return (
         <div>
-            <h1>Soham's Book Shop</h1>
+            <h1>Communal Clothing Recycler</h1>
             <div className = "books">
                 {books.map(book=>(
                     <div className="book" key = {book.id}>
-                        {book.cover && <img src={book.cover} alt="" />}
-                        <h2>{book.title}</h2>
-                        <p>{book.desc}</p>
-                        <span>{book.price}</span>
+                        {book.Picture && <img src={book.Picture} alt="" />}
+                        <h2>{book.Item}</h2>
+                        <p>{book.Description}</p>
+                        <span>{book.Price}</span>
                         <button className="delete" onClick={()=>handleDelete(book.id)}>Delete</button>
                         <button className="update"><Link to ={`/update/${book.id}`}>Update</Link></button>
                     </div>
                 ))}
             </div>
-            <button><Link to="/add">Add new book</Link></button>
+            <button><Link to="/add">Add new item</Link></button>
         </div>
         );
     

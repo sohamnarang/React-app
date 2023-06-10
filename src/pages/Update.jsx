@@ -5,10 +5,10 @@ import axios from 'axios'
 
 const Update = () => {
     const [book,setBook] = useState({
-        title:"",
-        desc:"",
-        price:null,
-        cover:"",
+        Item:"",
+        Description:"",
+        Price:null,
+        Picture:"",
     });
 
     const navigate = useNavigate() 
@@ -35,11 +35,11 @@ const Update = () => {
     console.log(book)
     return (
         <div classname="form">
-            <h1>Update the Book</h1>
-            <input type = "text" placeholder="title" onChange={handleChange} name="title"/>
-            <input type = "text" placeholder="desc" onChange={handleChange} name="desc"/>
-            <input type = "number" placeholder="price" onChange={handleChange} name="price"/>
-            <input type = "text" placeholder="cover" onChange={handleChange} name="cover"/>
+            <h1>Update the item</h1>
+            <input type = "text" placeholder="Item" onChange={handleChange} name="Item"/>
+            <input type = "text" placeholder="Description" onChange={handleChange} name="Description"/>
+            <input type = "number" placeholder="Price" onChange={handleChange} name="Price"/>
+            <input type = "text" placeholder="Picture" onChange={handleChange} name="Picture"/>
             <button className="formButton" onClick={handleClick}>Update</button>
             </div>
     )
