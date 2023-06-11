@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 
 
 
+
+
 const Books = () => {
     const [books,setBooks] = useState([])
     useEffect(()=>{
@@ -28,7 +30,8 @@ const Books = () => {
             console.log(err)
         }
     }
-
+    /* <img src={require("path/to/image/image.png")} /> */
+    // <img src="./logo.svg" alt="logo" />
     return (
         <div>
             <h1>Communal Clothing Recycler</h1>
@@ -36,6 +39,7 @@ const Books = () => {
                 {books.map(book=>(
                     <div className="book" key = {book.id}>
                         {book.Picture && <img src={book.Picture} alt="" />}
+                        
                         <h2>{book.Item}</h2>
                         <p>{book.Description}</p>
                         <span>{book.Price}</span>

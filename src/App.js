@@ -8,6 +8,7 @@ import Add from "./pages/Add";
 import Update from "./pages/Update";
 import "./style.css"
 
+
 function App() {
   return (
     <div className="App">
@@ -21,5 +22,9 @@ function App() {
     </div>
   );
 }
+
+
+/* <Route path ="path/to/image/image.png" element={<picture/>}/> */
+          /* <img src={require("path/to/image/image.png")} /> */
 
 export default App;
