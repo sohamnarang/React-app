@@ -30,7 +30,7 @@ const Add = () => {
     console.log(book)
     return (
         <div classname="form">
-            <h1>Add New Book</h1>
+            <h1>Add New Item</h1>
             <input type = "text" placeholder="Item" onChange={handleChange} name="Item"/>
             <input type = "text" placeholder="Description" onChange={handleChange} name="Description"/>
             <input type = "number" placeholder="Price" onChange={handleChange} name="Price"/>
